@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/vbh.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-3">
+                        <p style="color:white"> <img src="assets/images/phoneicon.png">
+                            +91 84890 34885
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-sm-4" >
+                        <p style="color:white"> <img src="assets/images/mail.png">
+                            vivek8122@gmail.com
+                        </p>
+                    </div>
+                    <div class="col-lg-7 col-sm-5 header-right" align="right">
+                        <ul>
+                            <li>
+                                <a href="#" data-toggle="model" data-target="#auth-model">
+                                    Customer Login
+                                    <img src="assets/images/login.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="model" data-target="#auth-model">
+                                    Agent Login
+                                    <img src="assets/images/alogin.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="container fixed-top rounded" id="scroll-shadow">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-3">
+                        <a href="index.html" alt="vhb travels">
+                            <img src="assets/images/logo.png" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-lg-9 col-sm-9">
+                        <nav class="navbar navbar-expand-xl navbar-light bg-white py-sm-2 py-1 px-0">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto navbar-right">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html" style="color: black">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" style="color: black">Print Ticket</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" style="color: black">Edit Ticket</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" style="color: black">Cancel Ticket</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" style="color: black">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" style="color: black">Feedback</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container slider">
+            <img src="assets/images/bus.png" class="img-responsive">
+            <div class="row">
+                <div class="col-lg-12 col-sm-6 rec">
+                    <div class="book-div wow animated fadeInUp delay-3s">
+                        <div class="container">
+                            <di<div class="book">       
+                                    <div class="book-inner">
+                                        <form>
+                                            <div class="form">
+                                                <div class="col-lg-12 col-sm-6">
+                                                    <select id="frm_id">
+                                                        <option value="" selected="">From</option>
+                                                        <option value="STF2CC95">Erode</option>
+                                                        <option value="STF4LL52268">coimbatore</option>
+                                                        <option value="STF3RJW215">Thirupur</option>
+                                                    </select>
+
+                                                    <div class="swap-icon">
+                                                        <a href="javascript:;"><img src="assets/images/swap.png"></a>
+                                                    </div>                            
+                                                </div>
+                                                <br>
+                                                <div class="col-lg-12 col-sm-6">
+                                                    <select id="to_id">
+                                                        <option selected="selected" value="">To</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-12 col-sm-6">
+                                                    <label class="cal-div"> 
+                                                        <input type="text" class="calendar" id="srch_date" name="srch_date" readonly placeholder="Journey Date">
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-12 col-sm-6">
+                                                    <label class="cal-div"> 
+                                                        <input type="text" class="calendar" id="return_date" name="return_date" readonly placeholder="Return Date">
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-12 col-sm-6" align="center">
+                                                    <input type="button" value="Search" class="search" id="btn-search" onclick="init_search();">
+                                                </div>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container slider">
+            <img src="assets/images/aboutbus.png" class="img-responsive">
+            <div class="row1">
+                <div class="col-lg-6 col-sm-3">
+                    <img src="assets/images/logo1.png"> <div class="text">TRAVELS</div>
+                    <p style="font-size: 20px;"> Lorem ipsum dolor sit amet, consectetur adipiscing eilits. 
+                        Vivams, loborti interdum arcu. Fusce suscipit turpis. Cras
+                        quam sapienx scelerisque acse lerisque sit amet vehicula
+                        non quam. Lorem ipsum dolor sit amet, consectetur adipi
+                        scing elit. Vivams, lobort interdum arcu. Fusce suscipit tu
+                        Cras quam sapienx, sceleri sque, ac-sce-lerisque sit amet,
+                        vehicula non quam.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing eilits. 
+                        Vivams, loborti interdum arcu. Fusce suscipit turpis. Cras
+                        quam sapienx scelerisque acse lerisque sit amet vehicula
+                        non quam. Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-lg-6 col-lg-3 shape">
+                    <div class="text1"style="color:white">
+                        About <br> Us
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container slider1">
+            
+        </div>
+    </body>
+</html>
